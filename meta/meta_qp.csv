@@ -1,0 +1,45 @@
+﻿colonne,description,type_valeur,exemple
+code_qp,Code du quartier prioritaire ,chaîne de caractères,QP082003
+nom_qp,Libellé du quartier prioritaire,chaîne de caractères,Centre Ville
+nom_commune,Libellé géographique de la (des) commune(s) englobante(s),chaîne de caractères,Moissac
+pop_mun,Population municipale,entier,2470
+pop_com_qp,Population municipale en QP de la (des) commune(s) englobante(s),entier,3672
+pop_com,Population municipale de la (des) commune(s) englobante(s),entier,12564
+ind_jeune,Indice de jeunesse : population de 0 à 19 ans / population de 60 ans et plus,nombre rationnel,0.9
+tx_tot_et,Part des étrangers parmi la population,nombre rationnel,25.4
+tx_f,Part des femmes parmi la population,nombre rationnel,50.6
+tx_f_et,Part des étrangères parmi les femmes,nombre rationnel,22.8
+percou,Nombre de personnes couvertes par au moins une prestation CAF (allocataire + conjoint + enfants et autres personnes à charge),entier,1307
+pmimp,Part des ménages imposés,nombre rationnel,24.7
+part_chomprinc,Part des ménages dont l'origine principale du revenu déclaré repose sur des indemnités de chômage,nombre rationnel,8.1
+decuc_q2,Médiane (en euros) du revenu déclaré par unité de consommation,entier,10136
+decuc_d1,Premier décile du revenu déclaré par unité de consommation,entier,1404
+decuc_d9,Neuvième décile du revenu déclaré par unité de consommation,entier,26388
+disp_q2,Médiane (en euros) du revenu disponible par unité de consommation,entier,13305
+disp_d1,Premier décile (en euros) du revenu disponible par unité de consommation,entier,6421
+disp_d9,Neuvième décile (en euros) du revenu disponible par unité de consommation,entier,25058
+tp60,Taux de pauvreté,nombre rationnel,43.9
+brev,Taux de bas revenus,nombre rationnel,59.1
+a,Nombre total de foyers allocataires percevant au moins une prestation CAF,entier,642
+tx_tot_empl,Part des personnes de 15 à 64 ans actives ayant un emploi parmi les personnes de 15 à 64 ans,nombre rationnel,47.5
+tx_f_empl,Part des femmes de 15 à 64 ans actives ayant un emploi parmi les femmes de 15 à 64 ans,nombre rationnel,41
+tx_et_empl,Part des étrangers de 15 à 64 actifs ayant un emploi parmi les étrangers de 15 à 64 ans,nombre rationnel,36.7
+tx_tot_eprec,Part des personnes en emploi précaire  parmi les personnes ayant un emploi.,nombre rationnel,34.4
+tx_f_eprec,Part des femmes en emploi précaire  parmi les femmes ayant un emploi.,nombre rationnel,31.9
+tx_et_eprec,Part des étrangers en emploi précaire  parmi les étrangers ayant un emploi.,nombre rationnel,59.3
+abcde,Nombre total de demandeurs d'emploi en fin de mois,entier,774
+abcde_f,Nombre total de demandeurs d'emploi femmes,entier,327
+abcde_h,Nombre total de demandeurs d'emploi hommes,entier,447
+abc_capbep,"Nombre de demandeurs d'emploi de catégorie A, B ou C de niveau de formation CAP-BEP",entier,187
+abc_bac,"Nombre de demandeurs d'emploi de catégorie A, B ou C de niveau de formation BAC",entier,111
+abc_supbac,"Nombre de demandeurs d'emploi de catégorie A, B ou C de niveau de formation supérieur au BAC",entier,64
+ec_mat,Nombre d'écoles maternelles à moins de 100m du QP,entier,1
+ec_elem,Nombre d'écoles élémentaires à moins de 100m du QP,entier,2
+ec_elem_pri,Nombre d'écoles élémentaires privées à moins de 100m du QP,entier,1
+coll,Nombre de collèges à moins de 300m du QP,entier,2
+coll_pri,Nombre de collèges privés à moins de 300m du QP,entier,1
+nbetab,Nombre d'établissements,entier,282
+ens_sante,"Nombre d'établissements de service aux particuliers : Enseignement, santé et action sociale",entier,37
+serv_par,Nombre d'établissements de service aux particuliers,entier,72
+serv_tot,Nombre d'établissements de service : Services aux entreprise et services aux particuliers,entier,137
+auto_ent,Nombre d'auto-entrepreneurs parmi les créations d'établissements,entier,3

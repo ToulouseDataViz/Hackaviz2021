@@ -1,0 +1,6 @@
+nom colonne,description,type_valeur,exemple
+code_commune,Code commune INSEE,chaîne de caractères,81021
+code_departement,Code département INSEE,chaîne de caractères,81
+population,Population,entier,5968
+nom_commune,Nom de la commune,chaîne de caractères,Aussillon
+
