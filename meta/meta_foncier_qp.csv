@@ -1,7 +1,7 @@
 ﻿colonne,description,type_valeur,exemple
-code_departement,Code département INSEE,chaîne de caractères,9
+code_departement,Code département INSEE,chaîne de caractères,09
 nom_departement,Nom du département,chaîne de caractères,Ariège
-code_commune,Code commune INSEE,chaîne de caractères,9261
+code_commune,Code commune INSEE,chaîne de caractères,09261
 nom_commune,Nom de la commune,chaîne de caractères,Saint-Girons
 code_qp,Code du quartier prioritaire ,chaîne de caractères,QP009001
 nom_qp,Libellé du quartier prioritaire,chaîne de caractères,Coeur De Ville
@@ -20,4 +20,4 @@ code_type,Code de type de local,chaîne de caractères,1
 type_local,Libellé du type de local,chaîne de caractères,Maison
 surface_reelle_bati,Surface réelle du bâti,entier,75
 nombre_pieces_principales,Nombre de pièces principales,entier,4
-surface_terrain,Surface réelle du bâti,entier,60
+surface_terrain,Surface du terrain,entier,60

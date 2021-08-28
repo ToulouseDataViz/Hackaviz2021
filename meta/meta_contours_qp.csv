@@ -1,8 +1,7 @@
  nom colonne,description,type_valeur,exemple
  code_qp,Code du quartier prioritaire,chaîne de caractères,QP066007
- nom_qp,Nom de la commune QP,chaîne de caractères,Bas-Vernet Nouveau QPV
- commune_qp,Nom de la commune,chaîne de caractères,Perpignan
- lib_qp,Libellé du quartier prioritaire,chaîne de caractères,Bas-Vernet Nouveau QPV
+ nom_qp,Nom du quartier prioritaire,chaîne de caractères,Bas-Vernet Nouveau QPV
+ commune_qp,Nom de la commune principale du QP,chaîne de caractères,Perpignan
  code_commune,Code commune INSEE,chaîne de caractères,66136
- nom_commune,Nom de la commune,chaîne de caractères,"Perpignan"
+ nom_commune,Nom de ou des communes englobantes,chaîne de caractères,"Perpignan"
  code_departement,Code département INSEE,chaîne de caractères,66

@@ -2,8 +2,8 @@
 code_qp,Code du quartier prioritaire ,chaîne de caractères,QP082003
 nom_qp,Libellé du quartier prioritaire,chaîne de caractères,Centre Ville
 nom_commune,Libellé géographique de la (des) commune(s) englobante(s),chaîne de caractères,Moissac
-pop_mun,Population municipale,entier,2470
-pop_com_qp,Population municipale en QP de la (des) commune(s) englobante(s),entier,3672
+pop_mun,Population municipale du quartier prioritaire,entier,2470
+pop_com_qp,Cumul de la population municipale de tous les quartiers prioritaires de la (des) commune(s) englobante(s),entier,3672
 pop_com,Population municipale de la (des) commune(s) englobante(s),entier,12564
 ind_jeune,Indice de jeunesse : population de 0 à 19 ans / population de 60 ans et plus,nombre rationnel,0.9
 tx_tot_et,Part des étrangers parmi la population,nombre rationnel,25.4
@@ -39,7 +39,7 @@ ec_elem_pri,Nombre d'écoles élémentaires privées à moins de 100m du QP,enti
 coll,Nombre de collèges à moins de 300m du QP,entier,2
 coll_pri,Nombre de collèges privés à moins de 300m du QP,entier,1
 nbetab,Nombre d'établissements,entier,282
-ens_sante,"Nombre d'établissements de service aux particuliers : Enseignement, santé et action sociale",entier,37
+ens_sante,"Nombre d'établissements de service aux particuliers : enseignement, santé et action sociale",entier,37
 serv_par,Nombre d'établissements de service aux particuliers,entier,72
-serv_tot,Nombre d'établissements de service : Services aux entreprise et services aux particuliers,entier,137
+serv_tot,Nombre d'établissements de service : services aux entreprise et services aux particuliers,entier,137
 auto_ent,Nombre d'auto-entrepreneurs parmi les créations d'établissements,entier,3
