@@ -57,6 +57,8 @@ Une archive (`.zip`) est aussi disponible pour
 [télécharger](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/data/data.zip)
 toutes les données.
 
+NB: pas à l'aise avec Qgis ou autre logiciel pour fusionner des données géographique (geojson) et un csv ? Vous pouvez par exemple utiliser [Geo Data MErger](https://funkeinteraktiv.github.io/geo-data-merger/) qui vous permet de faire cela via une interface graphique simple. Sélectionnez un fichier geojson de base puis un csv qui va venir enrichir les valeur du geojson avec ses colones. Il faut désigner une colonne "clé" sur les 2 fichiers pour faire la jointure.
+
 ## Format de fichiers
 
   - Si Les fichiers sont encodés en UTF-8.
