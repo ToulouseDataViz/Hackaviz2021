@@ -72,7 +72,7 @@ toutes les données.
 
   - Les latitudes et longitudes sont exprimées dans la projection `World
     Geodetic System 1984` (WGS 84).
-  - Elles sont exprimées sur 6 décimales.
+  - Elles sont tronquées sur 4 décimales.
 
 ## Jointures
 
