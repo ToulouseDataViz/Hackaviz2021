@@ -57,39 +57,56 @@ Une archive (`.zip`) est aussi disponible pour
 [télécharger](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/data/data.zip)
 toutes les données.
 
-## Format de fichiers
+## Format de fichiers CSV
 
-  - Si Les fichiers sont encodés en UTF-8.
-  - Les fichiers `csv` utilisent le séparateur de colonne `,` et le
-    caractère décimal `.`
+  - Les fichiers sont encodés en UTF-8.
+  - Les fichiers `csv` utilisent le séparateur de colonne “`,`” et le
+    caractère décimal “`.`”.
   - Ces `csv` ont été exportés depuis à un paramètre régional anglais.
     Pensez à modifier les paramètres d’import de votre logiciel préféré
     \!
   - Si vous avez des difficultés à importer ces `csv`, nous vous
     proposons une alternative sous forme de fichier Microsoft Excel.
 
-## Colonnes
+## Format de fichiers JSON
 
-  - Dans les fichiers, les noms de colonnes sont unifiés afin de faire
-    [jointures](https://fr.wikipedia.org/wiki/Jointure_\(informatique\))
-    entre fichiers.  
+  - Les latitudes et longitudes sont exprimées dans la projection `World
+    Geodetic System 1984` (WGS 84).
+  - Elles sont exprimées sur 6 décimales.
+
+## Jointures
+
+  - Nous avons pris le soin d’unifier les noms de colonnes des
+    différents fichiers afin que vous puissiez faire des
+    [jointures](https://fr.wikipedia.org/wiki/Jointure_\(informatique\)).
+  - Vous n’avez aucune obligation à fusionner ces fichiers : pensez
+    d’abord à l’histoire que vous voulez raconter \!
+  - Pour joindre deux `csv`, vous pouvez utiliser un modèle
+    [ObservableHQ](https://ressources.toulouse-dataviz.fr/newsletter--toulouse-dataviz-15--spcial-hackaviz-2021),
+    des librairies comme [Pandas](https://pandas.pydata.org/) ou le
+    coder directement.
+  - Pour fusionner des données géographiques `geojson` et un `csv`, si
+    vous ne connaissez pas QGIS ou R, nous vous suggérons [Geo Data
+    Merger](https://funkeinteraktiv.github.io/geo-data-merger/) qui vous
+    permet de faire cela via une interface graphique simple.
+    Sélectionnez un fichier `geojson` puis un `csv` qui va venir
+    enrichir le geojson. Désignez ensuite une colonne “clé” sur les 2
+    fichiers pour faire la jointure.
+
+## Format des valeurs
+
   - Les codes de départements et de communes ont été formattés
     respectivement sur 2 et 5 caractères conformément au [code officiel
     géographique](https://fr.wikipedia.org/wiki/Code_officiel_géographique).
   - Les codes de quartiers sont formés par le préfixe “QP” et 6
     chiffres.
-
-## Valeurs
-
   - Les dates sont au format ISO-8601 (YYYY-MM-DD) ex: `2020-12-31`.
   - Les valeurs foncières sont exprimées en euros.
-  - Les surfaces sont en mètres carrés.  
-  - Les latitudes et longitudes sont exprimées dans la projection `World
-    Geodetic System 1984` (WGS 84).
+  - Les surfaces sont en mètres carrés.
 
 # Description détaillée des données
 
-### Description du fichier `qp.csv`
+## Description du fichier `qp.csv`
 
 Caractéristiques démographiques et économiques des quartiers
 prioritaires d’Occitanie
@@ -201,7 +218,7 @@ Cette description est disponible sous forme de fichier `.csv`
 | serv\_tot       | Nombre d’établissements de service : services aux entreprise et services aux particuliers                                     | entier               | 137          |
 | auto\_ent       | Nombre d’auto-entrepreneurs parmi les créations d’établissements                                                              | entier               | 3            |
 
-### Description du fichier `foncier_qp.csv`
+## Description du fichier `foncier_qp.csv`
 
 Transactions foncières du 1er janvier 2016 au 31 décembre 2020
 
@@ -243,7 +260,7 @@ Cette description est disponible sous forme de fichier `.csv`
 | nombre\_pieces\_principales | Nombre de pièces principales                 | entier               | 4              |
 | surface\_terrain            | Surface du terrain                           | entier               | 60             |
 
-### Description du fichier `communes.geojson`
+## Description du fichier `communes.geojson`
 
 Contour des communes
 
@@ -256,7 +273,7 @@ Cette description est disponible sous forme de fichier `.csv`
 | code\_departement | Code département INSEE | chaîne de caractères | 81        |
 | nom\_commune      | Nom de la commune      | chaîne de caractères | Aussillon |
 
-### Description du fichier `qp.geojson`
+## Description du fichier `qp.geojson`
 
 Contour des quartiers prioritaires
 
