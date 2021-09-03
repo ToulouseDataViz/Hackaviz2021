@@ -1,15 +1,15 @@
 ﻿colonne,description,type_valeur,exemple
-code_qp,Code du quartier prioritaire ,chaîne de caractères,QP082003
-nom_qp,Libellé du quartier prioritaire,chaîne de caractères,Centre Ville
+code_qp,Code du quartier prioritaire (QP),chaîne de caractères,QP082003
+nom_qp,Libellé du QP,chaîne de caractères,Centre Ville
 nom_commune,Libellé géographique de la (des) commune(s) englobante(s),chaîne de caractères,Moissac
-pop_mun,Population municipale du quartier prioritaire,entier,2470
-pop_com_qp,Cumul de la population municipale de tous les quartiers prioritaires de la (des) commune(s) englobante(s),entier,3672
+pop_mun,Population municipale du QP,entier,2470
+pop_com_qp,Cumul de la population municipale de tous les QP de la (des) commune(s) englobante(s),entier,3672
 pop_com,Population municipale de la (des) commune(s) englobante(s),entier,12564
 ind_jeune,Indice de jeunesse : population de 0 à 19 ans / population de 60 ans et plus,nombre rationnel,0.9
 tx_tot_et,Part des étrangers parmi la population,nombre rationnel,25.4
 tx_f,Part des femmes parmi la population,nombre rationnel,50.6
 tx_f_et,Part des étrangères parmi les femmes,nombre rationnel,22.8
-percou,Nombre de personnes couvertes par au moins une prestation CAF (allocataire + conjoint + enfants et autres personnes à charge),entier,1307
+percou,Nombre de personnes couvertes par au moins une prestation CAF,entier,1307
 pmimp,Part des ménages imposés,nombre rationnel,24.7
 part_chomprinc,Part des ménages dont l'origine principale du revenu déclaré repose sur des indemnités de chômage,nombre rationnel,8.1
 decuc_q2,Médiane (en euros) du revenu déclaré par unité de consommation,entier,10136

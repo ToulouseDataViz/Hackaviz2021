@@ -7,8 +7,8 @@ code_qp,Code du quartier prioritaire ,chaîne de caractères,QP009001
 nom_qp,Libellé du quartier prioritaire,chaîne de caractères,Coeur De Ville
 id_mutation,Identifiant de vente,chaîne de caractères,2019-100563
 id_parcelle,Identifiant de parcelle (14 caractères),chaîne de caractères,092610000D0167
-longitude,Longitude du centre de la parcelle concernée,nombre rationnel,1.14377
-latitude,Latitude du centre de la parcelle concernée,nombre rationnel,42.98314
+longitude,Longitude du centre de la parcelle concernée,nombre rationnel,1.1438
+latitude,Latitude du centre de la parcelle concernée,nombre rationnel,42.9831
 nombre_lot,Nombre de lots,entier,0
 date_mutation,Date de la vente,date,2019-11-25
 jour_mutation,Jour de la vente,chaîne de caractères,25

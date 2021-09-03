@@ -113,7 +113,7 @@ prioritaires d’Occitanie
 
   - Définitions
     
-      - Quartier prioritaire (QPV) de la politique de la ville :
+      - Quartier prioritaire (QP) de la politique de la ville :
         territoires en difficulté, cibles prioritaires de la [politique
         de la
         ville](https://www.cohesion-territoires.gouv.fr/quartiers-de-la-politique-de-la-ville),
@@ -134,8 +134,11 @@ prioritaires d’Occitanie
       - Population étrangère : toute personne résidant en France qui n’a
         pas la nationalité française.
     
-      - Taux parmi la population : taux calculé par rapport à la
-        population municipale.
+      - Part parmi la population : calculé par rapport à la population
+        municipale du QP.
+    
+      - Personnes couvertes par au moins une prestation CAF :
+        allocataire + conjoint + enfants et autres personnes à charge.
     
       - Taux de pauvreté au seuil de 60% : part de la population sous le
         seuil de 60% du [niveau de vie
@@ -171,52 +174,52 @@ prioritaires d’Occitanie
 Cette description est disponible sous forme de fichier `.csv`
 [meta\_qp.csv](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/meta/meta_qp.csv).
 
-| colonne         | description                                                                                                                   | type\_valeur         | exemple      |
-| :-------------- | :---------------------------------------------------------------------------------------------------------------------------- | :------------------- | :----------- |
-| code\_qp        | Code du quartier prioritaire                                                                                                  | chaîne de caractères | QP082003     |
-| nom\_qp         | Libellé du quartier prioritaire                                                                                               | chaîne de caractères | Centre Ville |
-| nom\_commune    | Libellé géographique de la (des) commune(s) englobante(s)                                                                     | chaîne de caractères | Moissac      |
-| pop\_mun        | Population municipale du quartier prioritaire                                                                                 | entier               | 2470         |
-| pop\_com\_qp    | Cumul de la population municipale de tous les quartiers prioritaires de la (des) commune(s) englobante(s)                     | entier               | 3672         |
-| pop\_com        | Population municipale de la (des) commune(s) englobante(s)                                                                    | entier               | 12564        |
-| ind\_jeune      | Indice de jeunesse : population de 0 à 19 ans / population de 60 ans et plus                                                  | nombre rationnel     | 0.9          |
-| tx\_tot\_et     | Part des étrangers parmi la population                                                                                        | nombre rationnel     | 25.4         |
-| tx\_f           | Part des femmes parmi la population                                                                                           | nombre rationnel     | 50.6         |
-| tx\_f\_et       | Part des étrangères parmi les femmes                                                                                          | nombre rationnel     | 22.8         |
-| percou          | Nombre de personnes couvertes par au moins une prestation CAF (allocataire + conjoint + enfants et autres personnes à charge) | entier               | 1307         |
-| pmimp           | Part des ménages imposés                                                                                                      | nombre rationnel     | 24.7         |
-| part\_chomprinc | Part des ménages dont l’origine principale du revenu déclaré repose sur des indemnités de chômage                             | nombre rationnel     | 8.1          |
-| decuc\_q2       | Médiane (en euros) du revenu déclaré par unité de consommation                                                                | entier               | 10136        |
-| decuc\_d1       | Premier décile du revenu déclaré par unité de consommation                                                                    | entier               | 1404         |
-| decuc\_d9       | Neuvième décile du revenu déclaré par unité de consommation                                                                   | entier               | 26388        |
-| disp\_q2        | Médiane (en euros) du revenu disponible par unité de consommation                                                             | entier               | 13305        |
-| disp\_d1        | Premier décile (en euros) du revenu disponible par unité de consommation                                                      | entier               | 6421         |
-| disp\_d9        | Neuvième décile (en euros) du revenu disponible par unité de consommation                                                     | entier               | 25058        |
-| tp60            | Taux de pauvreté                                                                                                              | nombre rationnel     | 43.9         |
-| brev            | Taux de bas revenus                                                                                                           | nombre rationnel     | 59.1         |
-| a               | Nombre total de foyers allocataires percevant au moins une prestation CAF                                                     | entier               | 642          |
-| tx\_tot\_empl   | Part des personnes de 15 à 64 ans actives ayant un emploi parmi les personnes de 15 à 64 ans                                  | nombre rationnel     | 47.5         |
-| tx\_f\_empl     | Part des femmes de 15 à 64 ans actives ayant un emploi parmi les femmes de 15 à 64 ans                                        | nombre rationnel     | 41           |
-| tx\_et\_empl    | Part des étrangers de 15 à 64 actifs ayant un emploi parmi les étrangers de 15 à 64 ans                                       | nombre rationnel     | 36.7         |
-| tx\_tot\_eprec  | Part des personnes en emploi précaire parmi les personnes ayant un emploi.                                                    | nombre rationnel     | 34.4         |
-| tx\_f\_eprec    | Part des femmes en emploi précaire parmi les femmes ayant un emploi.                                                          | nombre rationnel     | 31.9         |
-| tx\_et\_eprec   | Part des étrangers en emploi précaire parmi les étrangers ayant un emploi.                                                    | nombre rationnel     | 59.3         |
-| abcde           | Nombre total de demandeurs d’emploi en fin de mois                                                                            | entier               | 774          |
-| abcde\_f        | Nombre total de demandeurs d’emploi femmes                                                                                    | entier               | 327          |
-| abcde\_h        | Nombre total de demandeurs d’emploi hommes                                                                                    | entier               | 447          |
-| abc\_capbep     | Nombre de demandeurs d’emploi de catégorie A, B ou C de niveau de formation CAP-BEP                                           | entier               | 187          |
-| abc\_bac        | Nombre de demandeurs d’emploi de catégorie A, B ou C de niveau de formation BAC                                               | entier               | 111          |
-| abc\_supbac     | Nombre de demandeurs d’emploi de catégorie A, B ou C de niveau de formation supérieur au BAC                                  | entier               | 64           |
-| ec\_mat         | Nombre d’écoles maternelles à moins de 100m du QP                                                                             | entier               | 1            |
-| ec\_elem        | Nombre d’écoles élémentaires à moins de 100m du QP                                                                            | entier               | 2            |
-| ec\_elem\_pri   | Nombre d’écoles élémentaires privées à moins de 100m du QP                                                                    | entier               | 1            |
-| coll            | Nombre de collèges à moins de 300m du QP                                                                                      | entier               | 2            |
-| coll\_pri       | Nombre de collèges privés à moins de 300m du QP                                                                               | entier               | 1            |
-| nbetab          | Nombre d’établissements                                                                                                       | entier               | 282          |
-| ens\_sante      | Nombre d’établissements de service aux particuliers : enseignement, santé et action sociale                                   | entier               | 37           |
-| serv\_par       | Nombre d’établissements de service aux particuliers                                                                           | entier               | 72           |
-| serv\_tot       | Nombre d’établissements de service : services aux entreprise et services aux particuliers                                     | entier               | 137          |
-| auto\_ent       | Nombre d’auto-entrepreneurs parmi les créations d’établissements                                                              | entier               | 3            |
+| colonne         | description                                                                                       | type\_valeur         | exemple      |
+| :-------------- | :------------------------------------------------------------------------------------------------ | :------------------- | :----------- |
+| code\_qp        | Code du quartier prioritaire (QP)                                                                 | chaîne de caractères | QP082003     |
+| nom\_qp         | Libellé du QP                                                                                     | chaîne de caractères | Centre Ville |
+| nom\_commune    | Libellé géographique de la (des) commune(s) englobante(s)                                         | chaîne de caractères | Moissac      |
+| pop\_mun        | Population municipale du QP                                                                       | entier               | 2470         |
+| pop\_com\_qp    | Cumul de la population municipale de tous les QP de la (des) commune(s) englobante(s)             | entier               | 3672         |
+| pop\_com        | Population municipale de la (des) commune(s) englobante(s)                                        | entier               | 12564        |
+| ind\_jeune      | Indice de jeunesse : population de 0 à 19 ans / population de 60 ans et plus                      | nombre rationnel     | 0.9          |
+| tx\_tot\_et     | Part des étrangers parmi la population                                                            | nombre rationnel     | 25.4         |
+| tx\_f           | Part des femmes parmi la population                                                               | nombre rationnel     | 50.6         |
+| tx\_f\_et       | Part des étrangères parmi les femmes                                                              | nombre rationnel     | 22.8         |
+| percou          | Nombre de personnes couvertes par au moins une prestation CAF                                     | entier               | 1307         |
+| pmimp           | Part des ménages imposés                                                                          | nombre rationnel     | 24.7         |
+| part\_chomprinc | Part des ménages dont l’origine principale du revenu déclaré repose sur des indemnités de chômage | nombre rationnel     | 8.1          |
+| decuc\_q2       | Médiane (en euros) du revenu déclaré par unité de consommation                                    | entier               | 10136        |
+| decuc\_d1       | Premier décile du revenu déclaré par unité de consommation                                        | entier               | 1404         |
+| decuc\_d9       | Neuvième décile du revenu déclaré par unité de consommation                                       | entier               | 26388        |
+| disp\_q2        | Médiane (en euros) du revenu disponible par unité de consommation                                 | entier               | 13305        |
+| disp\_d1        | Premier décile (en euros) du revenu disponible par unité de consommation                          | entier               | 6421         |
+| disp\_d9        | Neuvième décile (en euros) du revenu disponible par unité de consommation                         | entier               | 25058        |
+| tp60            | Taux de pauvreté                                                                                  | nombre rationnel     | 43.9         |
+| brev            | Taux de bas revenus                                                                               | nombre rationnel     | 59.1         |
+| a               | Nombre total de foyers allocataires percevant au moins une prestation CAF                         | entier               | 642          |
+| tx\_tot\_empl   | Part des personnes de 15 à 64 ans actives ayant un emploi parmi les personnes de 15 à 64 ans      | nombre rationnel     | 47.5         |
+| tx\_f\_empl     | Part des femmes de 15 à 64 ans actives ayant un emploi parmi les femmes de 15 à 64 ans            | nombre rationnel     | 41           |
+| tx\_et\_empl    | Part des étrangers de 15 à 64 actifs ayant un emploi parmi les étrangers de 15 à 64 ans           | nombre rationnel     | 36.7         |
+| tx\_tot\_eprec  | Part des personnes en emploi précaire parmi les personnes ayant un emploi.                        | nombre rationnel     | 34.4         |
+| tx\_f\_eprec    | Part des femmes en emploi précaire parmi les femmes ayant un emploi.                              | nombre rationnel     | 31.9         |
+| tx\_et\_eprec   | Part des étrangers en emploi précaire parmi les étrangers ayant un emploi.                        | nombre rationnel     | 59.3         |
+| abcde           | Nombre total de demandeurs d’emploi en fin de mois                                                | entier               | 774          |
+| abcde\_f        | Nombre total de demandeurs d’emploi femmes                                                        | entier               | 327          |
+| abcde\_h        | Nombre total de demandeurs d’emploi hommes                                                        | entier               | 447          |
+| abc\_capbep     | Nombre de demandeurs d’emploi de catégorie A, B ou C de niveau de formation CAP-BEP               | entier               | 187          |
+| abc\_bac        | Nombre de demandeurs d’emploi de catégorie A, B ou C de niveau de formation BAC                   | entier               | 111          |
+| abc\_supbac     | Nombre de demandeurs d’emploi de catégorie A, B ou C de niveau de formation supérieur au BAC      | entier               | 64           |
+| ec\_mat         | Nombre d’écoles maternelles à moins de 100m du QP                                                 | entier               | 1            |
+| ec\_elem        | Nombre d’écoles élémentaires à moins de 100m du QP                                                | entier               | 2            |
+| ec\_elem\_pri   | Nombre d’écoles élémentaires privées à moins de 100m du QP                                        | entier               | 1            |
+| coll            | Nombre de collèges à moins de 300m du QP                                                          | entier               | 2            |
+| coll\_pri       | Nombre de collèges privés à moins de 300m du QP                                                   | entier               | 1            |
+| nbetab          | Nombre d’établissements                                                                           | entier               | 282          |
+| ens\_sante      | Nombre d’établissements de service aux particuliers : enseignement, santé et action sociale       | entier               | 37           |
+| serv\_par       | Nombre d’établissements de service aux particuliers                                               | entier               | 72           |
+| serv\_tot       | Nombre d’établissements de service : services aux entreprise et services aux particuliers         | entier               | 137          |
+| auto\_ent       | Nombre d’auto-entrepreneurs parmi les créations d’établissements                                  | entier               | 3            |
 
 ## Description du fichier `foncier_qp.csv`
 
@@ -245,8 +248,8 @@ Cette description est disponible sous forme de fichier `.csv`
 | nom\_qp                     | Libellé du quartier prioritaire              | chaîne de caractères | Coeur De Ville |
 | id\_mutation                | Identifiant de vente                         | chaîne de caractères | 2019-100563    |
 | id\_parcelle                | Identifiant de parcelle (14 caractères)      | chaîne de caractères | 092610000D0167 |
-| longitude                   | Longitude du centre de la parcelle concernée | nombre rationnel     | 1.14377        |
-| latitude                    | Latitude du centre de la parcelle concernée  | nombre rationnel     | 42.98314       |
+| longitude                   | Longitude du centre de la parcelle concernée | nombre rationnel     | 1.1438         |
+| latitude                    | Latitude du centre de la parcelle concernée  | nombre rationnel     | 42.9831        |
 | nombre\_lot                 | Nombre de lots                               | entier               | 0              |
 | date\_mutation              | Date de la vente                             | date                 | 2019-11-25     |
 | jour\_mutation              | Jour de la vente                             | chaîne de caractères | 25             |
@@ -263,6 +266,11 @@ Cette description est disponible sous forme de fichier `.csv`
 ## Description du fichier `communes.geojson`
 
 Contour des communes
+
+  - Toutes nos excuses auprès des Séméacaises et Séméacais. Le contour
+    de la commune a été omis dans le jeu de données. Ce contour de
+    commune concerne le quartier prioritaire “Tarbes Est”, à cheval sur
+    Tarbes et Séméac.
 
 Cette description est disponible sous forme de fichier `.csv`
 [meta\_communes.csv](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/meta/meta_communes.csv).
@@ -316,7 +324,7 @@ Cette description est disponible sous forme de fichier `.csv`
 
   - Juin 2021: construction du jeu de données avec Python, Pandas et
     jupyter-lab et création des fichiers
-  - Juillet 2021: première version de la consolidation des fichiers sous
-    R et Rstudio et étude autour d’aggrégats
-  - Août 2021: consolidation des fichiers et génération du readme sous R
-    et Visual Studio Code et export
+  - Juillet 2021: première version de la consolidation des fichiers et
+    étude autour d’aggrégats sous R et Rstudio
+  - Août 2021: consolidation des fichiers et génération du readme et
+    export sous R et Visual Studio Code
