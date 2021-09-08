@@ -44,7 +44,9 @@ Ces données sont disponibles sous forme de 4 fichiers, déclinés sous
 forme de données tabulaires au format
 [`.csv`](https://fr.wikipedia.org/wiki/Comma-separated_values) et
 géographique au format
-[`.geojson`](https://fr.wikipedia.org/wiki/GeoJSON).
+[`.geojson`](https://fr.wikipedia.org/wiki/GeoJSON). Pour télécharger un
+de ces fichiers, placez la souris sur le nom du fichier, faites un clic
+droit et choisir “Enregistrer la cible du lien sous …”.
 
 | Fichier de données                                                                                   | Contenu                                                         |
 | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
@@ -54,7 +56,7 @@ géographique au format
 | [`qp.geojson`](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/data/qp.geojson)             | contour géographique des quartiers de ces communes              |
 
 Une archive (`.zip`) est aussi disponible pour
-[télécharger](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/data/data.zip)
+[télécharger](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/data.zip)
 toutes les données.
 
 ## Format de fichiers CSV
@@ -67,6 +69,11 @@ toutes les données.
     \!
   - Si vous avez des difficultés à importer ces `csv`, nous vous
     proposons une alternative sous forme de fichier Microsoft Excel.
+
+| Fichier de données                                                                                 | Contenu                                                         |
+| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [`qp.xlsx`](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/data/qp.xlsx)                 | caractéristiques des 105 quartiers prioritaires d’Occitanie     |
+| [`foncier_qp.xlsx`](https://github.com/ToulouseDataViz/Hackaviz2021/raw/main/data/foncier_qp.xlsx) | transactions immobilières dans ces quartiers entre 2016 et 2020 |
 
 ## Format de fichiers JSON
 
