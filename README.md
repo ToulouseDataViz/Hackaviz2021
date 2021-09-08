@@ -31,6 +31,10 @@ ne sont pas renseignées. Avant de vous lancer dans des calculs
 d’indicateurs statistiques, pensez à examiner la qualité des données
 et le nombre d’échantillons considérés \!
 
+Retrouvez les règles et les modes d’évaluation sur la page
+[Hackaviz 2021](http://toulouse-dataviz.fr/hackaviz-2021#:~:text=LES%20R%C3%88GLES)
+de l’association [Toulouse Dataviz (TDV)](http://toulouse-dataviz.fr).
+
 N’hésitez pas à nous contacter sur le
 [discord](https://discord.com/invite/RbTR4jKRp9) du Toulouse DataViz
 pour discuter entre participants, si vous avez besoin d’aide à propos
@@ -44,9 +48,11 @@ Ces données sont disponibles sous forme de 4 fichiers, déclinés sous
 forme de données tabulaires au format
 [`.csv`](https://fr.wikipedia.org/wiki/Comma-separated_values) et
 géographique au format
-[`.geojson`](https://fr.wikipedia.org/wiki/GeoJSON). Pour télécharger un
-de ces fichiers, placez la souris sur le nom du fichier, faites un clic
-droit et choisir “Enregistrer la cible du lien sous …”.
+[`.geojson`](https://fr.wikipedia.org/wiki/GeoJSON).
+
+Pour télécharger un de ces fichiers, placez la souris sur le nom du
+fichier, faites un clic droit et choisir “Enregistrer la cible du lien
+sous …”.
 
 | Fichier de données                                                                                   | Contenu                                                         |
 | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
